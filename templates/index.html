@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>RULEBOT CHAT</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <style>
+        #chat-box {
+            border: 1px solid #ccc;
+            padding: 10px;
+            height: 300px;
+            width: 400px;
+            overflow-y: auto;
+            margin-bottom: 10px;
+        }
+        p { margin: 5px 0; }
+    </style>
+</head>
+<body>
+    <h1>RULEBOT CHAT</h1>
+
+    <div id="chat-box">
+        {% for message in chat_history %}
+            <p><b>You:</b> {{ message.user }}</p>
+            <p><b>Bot:</b> {{ message.bot }}</p>
+        {% endfor %}
+    </div>
+
+    <form id="chat-form">
+        <input type="text" name="user_input" id="user_input" placeholder="ENTER YOUR MESSAGE" required autofocus>
+        <button type="submit">Send</button>
+    </form>
+
+    <script>
+        const chatForm = document.getElementById("chat-form");
+        const chatBox = document.getElementById("chat-box");
+        const userInput = document.getElementById("user_input");
+
+        chatForm.addEventListener("submit", async function(e) {
+            e.preventDefault();
+
+            const text = userInput.value;
+            if (!text) return;
+            const response = await fetch("/chat", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify({ user_input: text })
+            });
+
+            const data = await response.json();
+            const userMsg = document.createElement("p");
+            userMsg.innerHTML = `<b>You:</b> ${data.user}`;
+            chatBox.appendChild(userMsg);
+            const botMsg = document.createElement("p");
+            botMsg.innerHTML = `<b>Bot:</b> ${data.bot}`;
+            chatBox.appendChild(botMsg);
+            chatBox.scrollTop = chatBox.scrollHeight;
+            userInput.value = "";
+            userInput.focus();
+        });
+    </script>
+</body>
+</html>
