@@ -1,0 +1,104 @@
+{
+    "greetings":{
+        "patterns":["hi","hello","hey","good morning","good afternoon","good evening"],
+        "responses":["Hello!How may I help?","Hi there! Need help?","Hey!,How may i help?"]
+    },
+    "ask_status":{
+        "patterns":["how are you doing?","how's it going?","how are you?","how do you do?","how're you?"],
+        "responses":["I'm doing great, what about you?", "Everything is good this side. What about you?"]
+  },
+  "goodbye": {
+    "patterns": ["bye", "goodbye", "see you", "talk to you later", "exit", "quit"],
+    "responses": ["Goodbye!", "See you soon!", "Take care — bye!"]
+  },
+
+  "thanks": {
+    "patterns": ["thanks", "thank you", "thx", "tysm", "appreciate it"],
+    "responses": ["You're welcome!", "Glad to help!", "Anytime!","Need help with anything else? I am here to assist you."]
+  },
+
+  "ask_name": {
+    "patterns": ["what is your name", "who are you", "your name", "tell me your name"],
+    "responses": ["I'm your friendly chatbot!", "You can call me RuleBot.What about you?", "I'm just a virtual friend,here to help you!"]
+  },
+  "feeling_good": {
+    "patterns": ["i am fine", "i am good", "doing great", "feeling nice", "i'm fine"],
+    "responses": ["That’s great to hear!", "Awesome! Keep smiling :)","Glad to hear that!"]
+  },
+
+  "feeling_bad": {
+    "patterns": ["i am sad", "feeling low", "not good", "feeling bad", "i am upset"],
+    "responses": ["I’m sorry to hear that. Want to talk about it?", "That sounds tough — I’m here if you need to chat.","It's okay. I am here if you need anything!"]
+  },
+
+  "ask_time": {
+    "patterns": ["what time is it", "tell me the time", "current time", "what's the time"],
+    "responses": ["I can’t tell exact time, but your system clock can!", "You can check your device clock — I'm timeless 😄"]
+  },
+
+  "ask_date": {
+    "patterns": ["what is the date", "tell me today's date", "today's date"],
+    "responses": ["I can’t fetch today’s date, but check your calendar — it's a great day!","I think your calendar can pretty much help you with that! Want me to assist you with that?"]
+  },
+
+  "ask_weather": {
+    "patterns": ["what's the weather", "tell me the weather", "how is the weather", "weather today"],
+    "responses": ["I can't check live weather yet, but I guess it's pleasant!", "Not sure, but you can open a weather app!","Weather apps are a great assistance!, want me to assist you with that?"]
+  },
+
+  "ask_age": {
+    "patterns": ["how old are you", "what is your age", "your age"],
+    "responses": ["I'm ageless — I live in code!", "Bots don’t age, we just update 😉","As young as the lifeline of this code!"]
+  },
+
+  "ask_help": {
+    "patterns": ["help", "i need help", "can you help me", "please help"],
+    "responses": ["Sure! Tell me what you need help with.", "I’m here to assist. What’s the problem?","Always here to assist you. Just tell me."]
+  },
+
+  "tell_joke": {
+    "patterns": ["tell me a joke", "make me laugh", "say something funny"],
+    "responses": ["Haha, This one's funny. Check it out. Why don’t robots panic? Because they have nerves of steel!", "Sure,I told my computer I needed a break — and it said 'no problem, I’ll go to sleep.' 😄, funny though!","Here it goes.Teacher-Why are you late?  Student-Because the board outside the school gate says, go slow"]
+  },
+
+  "ask_study": {
+    "patterns": ["how to study", "study tips", "help me study", "how can i focus"],
+    "responses": ["Try studying in short bursts with breaks — the Pomodoro technique!. Want more details? I am here to help", "Sure,here it is...Keep distractions away, take notes by hand — it helps you focus!","Check this out. Break large tasks into smaller achievable goals. This would help you manage stuff in a lot easier way!"]
+  },
+
+  "ask_motivation": {
+    "patterns": ["motivate me", "i need motivation", "say something inspiring", "give me motivation"],
+    "responses": ["Sure,here it is...You’re doing better than you think — keep going!", "Progress is progress, no matter how small. Don’t give up!","Strive for progress not perfection!"]
+  },
+
+  "ask_language": {
+    "patterns": ["what language do you speak", "what language are you written in", "which programming language"],
+    "responses": ["I speak Python — the language of simplicity and power!", "I’m built using Python, a great language for beginners.","I am a python based bot.Need anything? just ask me!"]
+  },
+
+  "fun_fact": {
+    "patterns": ["tell me a fun fact", "interesting fact", "say something cool"],
+    "responses": ["Did you know? Honey never spoils!", "Fun fact: The first computer bug was an actual moth stuck in a computer.That's funny though!","Octopuses have three hearts two pump blood to the gills, and one pumps it to the rest of the body 🐙💓"]
+  },
+
+  "ask_place": {
+    "patterns": ["where are you from", "where do you live", "your location"],
+    "responses": ["I live inside your computer!", "I exist in code — everywhere and nowhere 😄"]
+  },
+
+  "ask_purpose": {
+    "patterns": ["what can you do", "what is your purpose", "why were you created"],
+    "responses": ["I’m here to chat and help you learn about AI!", "My goal is to make conversations simple and fun.","I am here to be your virtual assistant and a friend. Need help? I am just a text away!"]
+  },
+  "ask_favorite": {
+    "patterns": ["what is your favorite color","favorite thing"],
+    "responses": ["I like binary colors — black and white 😄", "Electric blue, because it sounds high voltage!"]
+  },
+
+  "unknown": {
+    "patterns": [],
+    "responses": ["I didn’t quite get that. Can you say it differently?", "Hmm, that’s new to me — can you rephrase?","That's something new to me, Can you try it in different words?"]
+  }
+}
+
+
