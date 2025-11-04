@@ -1,6 +1,6 @@
 # CODSOFT - Internship Projects
 
-This repository contains all the tasks and projects for my internship at [Company Name].
+This repository contains all the tasks and projects for my internship at CODSOFT
 
 ## Project 1: Rule-based Chatbot
 
