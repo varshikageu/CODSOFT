@@ -1,0 +1,9 @@
+movie_id,title,genre
+1,The Matrix,Action|Sci-Fi
+2,Inception,Action|Sci-Fi|Thriller
+3,The Godfather,Crime|Drama
+4,Forrest Gump,Drama|Romance
+5,The Dark Knight,Action|Crime|Drama
+6,Titanic,Romance|Drama
+7,Avengers: Endgame,Action|Adventure|Sci-Fi
+8,Interstellar,Adventure|Drama|Sci-Fi
